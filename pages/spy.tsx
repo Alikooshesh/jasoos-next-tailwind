@@ -23,25 +23,6 @@ const SpyPage = ()=>{
         }
     },[])
 
-    useEffect(()=>{
-        const fingerScannerInterval = setInterval(()=>{
-            const scannerElement = document.getElementById('fingerScanner')
-
-            if(scannerElement?.offsetHeight){
-
-                if(scannerElement?.offsetHeight < 1 || scannerElement?.offsetHeight > 80){
-                    scannerElement.style.height = `1px`
-                }else{
-                    scannerElement.style.height = `${scannerElement?.offsetHeight + 1}px`
-                }
-            }
-        },40)
-
-        return()=>{
-            clearInterval(fingerScannerInterval)
-        }
-    },[])
-
     return(
         <>
             <div className="w-full h-screen max-w-[450px] mx-auto p-[16px] bg-[#981010]">
@@ -82,7 +63,7 @@ const SpyPage = ()=>{
 </svg>
 
         {touchStatus ?
-        <div id="fingerScanner" className="w-[130%] border-b border-[#41F900] absolute top-0 left-[-15%]"/> : <></>    
+        <div id="fingerScanner" className="fingerPrint-scanner w-[130%] border-b border-[#41F900] absolute top-0 left-[-15%]"/> : <></>    
     }
 
                     </div>
