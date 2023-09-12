@@ -73,7 +73,7 @@
 }
 
 .fingerPrint-scanner{
-    animation: fingerPrintAnimation 1500ms infinite;
+    animation: fingerPrintAnimation 4000ms infinite;
 }
 
 @keyframes fingerPrintAnimation {
