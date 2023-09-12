@@ -22,7 +22,7 @@ const SpyDataSetter = ({data,setData,nextPageStep}:Iprops)=>{
                                 setData({...data,playersCount: data.playersCount-1})
                             }
                         }} className={'cursor-pointer'} width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M14 14H8.16667M19.8333 14H16.9167M24.5 14C24.5 19.799 19.799 24.5 14 24.5C8.20101 24.5 3.5 19.799 3.5 14C3.5 8.20101 8.20101 3.5 14 3.5C19.799 3.5 24.5 8.20101 24.5 14Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14 14H8.16667M19.8333 14H16.9167M24.5 14C24.5 19.799 19.799 24.5 14 24.5C8.20101 24.5 3.5 19.799 3.5 14C3.5 8.20101 8.20101 3.5 14 3.5C19.799 3.5 24.5 8.20101 24.5 14Z" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
 
 
@@ -31,7 +31,7 @@ const SpyDataSetter = ({data,setData,nextPageStep}:Iprops)=>{
                         </p>
 
                         <svg onClick={()=> setData({...data,playersCount: data.playersCount+1})} className={'cursor-pointer'} width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M14 8.16667V19.8333M14 14H19.8333M8.16667 14H11.0833M24.5 14C24.5 19.799 19.799 24.5 14 24.5C8.20101 24.5 3.5 19.799 3.5 14C3.5 8.20101 8.20101 3.5 14 3.5C19.799 3.5 24.5 8.20101 24.5 14Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14 8.16667V19.8333M14 14H19.8333M8.16667 14H11.0833M24.5 14C24.5 19.799 19.799 24.5 14 24.5C8.20101 24.5 3.5 19.799 3.5 14C3.5 8.20101 8.20101 3.5 14 3.5C19.799 3.5 24.5 8.20101 24.5 14Z" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
 
                     </div>
@@ -48,7 +48,7 @@ const SpyDataSetter = ({data,setData,nextPageStep}:Iprops)=>{
                                 setData({...data,spyCount: data.spyCount-1})
                             }
                         }} className={'cursor-pointer'} width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M14 14H8.16667M19.8333 14H16.9167M24.5 14C24.5 19.799 19.799 24.5 14 24.5C8.20101 24.5 3.5 19.799 3.5 14C3.5 8.20101 8.20101 3.5 14 3.5C19.799 3.5 24.5 8.20101 24.5 14Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14 14H8.16667M19.8333 14H16.9167M24.5 14C24.5 19.799 19.799 24.5 14 24.5C8.20101 24.5 3.5 19.799 3.5 14C3.5 8.20101 8.20101 3.5 14 3.5C19.799 3.5 24.5 8.20101 24.5 14Z" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
 
                         <p className={'font-[700]'}>
@@ -60,7 +60,7 @@ const SpyDataSetter = ({data,setData,nextPageStep}:Iprops)=>{
                                 setData({...data,spyCount: data.spyCount+1})
                             }
                         }} className={'cursor-pointer'} width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M14 8.16667V19.8333M14 14H19.8333M8.16667 14H11.0833M24.5 14C24.5 19.799 19.799 24.5 14 24.5C8.20101 24.5 3.5 19.799 3.5 14C3.5 8.20101 8.20101 3.5 14 3.5C19.799 3.5 24.5 8.20101 24.5 14Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14 8.16667V19.8333M14 14H19.8333M8.16667 14H11.0833M24.5 14C24.5 19.799 19.799 24.5 14 24.5C8.20101 24.5 3.5 19.799 3.5 14C3.5 8.20101 8.20101 3.5 14 3.5C19.799 3.5 24.5 8.20101 24.5 14Z" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
 
                     </div>
