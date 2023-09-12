@@ -60,7 +60,12 @@ const SpyPage = () => {
                         </>
                     }
 
-                    <div 
+                    <div
+                        onMouseDown={()=> setTouchStatus(true)}
+                        onMouseUp={()=> {
+                            setShowDataCounter(showDataCounter+1)
+                            setTouchStatus(false)
+                        }}
                         onTouchStart={()=> setTouchStatus(true)}
                         onTouchEnd={()=> {
                             setShowDataCounter(showDataCounter+1)
