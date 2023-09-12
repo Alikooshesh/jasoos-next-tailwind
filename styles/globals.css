@@ -2,6 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities{
+
+    .font-iransans {
+        font-family: 'Iransans';
+    }
+}
+
+@font-face {
+    font-family: 'Iransans';
+    src: url("../public/fonts/iransans/IRANSANS_ULTRALIGHT.TTF");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Iransans';
+    src: url("../public/fonts/iransans/IRANSANS_LIGHT.TTF");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Iransans';
+    src: url("../public/fonts/iransans/IRANSANS_LIGHT.TTF");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Iransans';
+    src: url("../public/fonts/iransans/IRANSANS.TTF");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Iransans';
+    src: url("../public/fonts/iransans/IRANSANS_MEDIUM.TTF");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Iransans';
+    src: url("../public/fonts/iransans/IRANSANS_MEDIUM.TTF");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Iransans';
+    src: url("../public/fonts/iransans/IRANSANS_BOLD.TTF");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Iransans';
+    src: url("../public/fonts/iransans/IRANSANS_BLACK.TTF");
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Iransans';
+    src: url("../public/fonts/iransans/IRANSANS_BLACK.TTF");
+    font-weight: 900;
+}
+
+
+*{
+    font-family: 'Iransans';
+}
+
 *{
     user-select: none;
 }
