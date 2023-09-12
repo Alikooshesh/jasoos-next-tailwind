@@ -70,7 +70,7 @@ const SpyDataSetter = ({data,setData,nextPageStep}:Iprops)=>{
             </div>
 
             <button
-                onClick={nextPageStep}
+                onClick={()=>nextPageStep}
                 className={'px-[27px] py-[7px] text-[32px] font-[700] bg-black text-[#981010] rounded-[8px]'}
             >
                 شروع
