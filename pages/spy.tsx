@@ -8,13 +8,18 @@ const SpyPage = ()=>{
         const spyWordBox = document.getElementById('spyWord-box')
         const startTouchHandler = ()=> setTouchStatus(true)
         spyWordBox?.addEventListener('touchstart',startTouchHandler)
+        spyWordBox?.addEventListener('mousedown',startTouchHandler)
 
         const endTouchHandler = ()=> setTouchStatus(false)
         spyWordBox?.addEventListener('touchend',endTouchHandler)
+        spyWordBox?.addEventListener('mouseup',endTouchHandler)
 
         return ()=>{
             spyWordBox?.removeEventListener('touchstart',startTouchHandler)
             spyWordBox?.removeEventListener('touchend',endTouchHandler)
+
+            spyWordBox?.removeEventListener('mousedown',startTouchHandler)
+            spyWordBox?.removeEventListener('mouseup',endTouchHandler)
         }
     },[])
 
