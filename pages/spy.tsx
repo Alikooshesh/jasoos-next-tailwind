@@ -5,7 +5,7 @@ const SpyPage = ()=>{
     const [touchStatus , setTouchStatus] = useState(false)
 
     useEffect(()=>{
-        const spyWordBox = document.getElementById('spyWord-box')
+        const spyWordBox = document.getElementById('spyWord-finger-box')
         const startTouchHandler = ()=> setTouchStatus(true)
         spyWordBox?.addEventListener('touchstart',startTouchHandler)
         spyWordBox?.addEventListener('mousedown',startTouchHandler)
@@ -44,7 +44,7 @@ const SpyPage = ()=>{
 
     return(
         <>
-            <div id="spyWord-box" className="w-full h-screen max-w-[450px] mx-auto p-[16px] bg-[#981010]">
+            <div className="w-full h-screen max-w-[450px] mx-auto p-[16px] bg-[#981010]">
                 <div className="w-full h-full flex flex-col justify-between items-center">
                     <div/>
                     <div className="w-full">
@@ -59,7 +59,7 @@ const SpyPage = ()=>{
                         </p>
                     </div>
 
-                    <div className="w-[60px] h-[80px] mb-[70px] relative">
+                    <div id="spyWord-finger-box"  className="w-[60px] h-[80px] mb-[70px] relative">
                     <svg className="w-full h-full" viewBox="0 0 49 64" fill={touchStatus ? '#41F900' : 'black'} xmlns="http://www.w3.org/2000/svg">
 <path d="M28.3324 38.7545V34.2118C28.3324 32.4206 26.8882 30.9634 25.1131 30.9634C23.3379 30.9634 21.8938 32.4206 21.8938 34.2118V38.3133C21.8938 43.2559 20.0892 48.0013 16.8123 51.6752L12.2942 56.7407C11.9146 57.1663 11.9488 57.8218 12.3706 58.205C12.7923 58.588 13.4419 58.5535 13.8216 58.1279L18.3397 53.0623C21.9567 49.007 23.9486 43.769 23.9486 38.3133V34.2118C23.9486 33.5639 24.471 33.0368 25.1131 33.0368C25.7551 33.0368 26.2775 33.5639 26.2775 34.2118V38.7545C26.2775 44.837 24.0444 50.6653 19.9895 55.166L15.5854 60.0543C15.2037 60.4779 15.2347 61.1338 15.6545 61.5189C15.8514 61.6995 16.0987 61.7884 16.3453 61.7884C16.6247 61.7884 16.9031 61.6741 17.1058 61.4491L21.5098 56.5607C25.9094 51.6775 28.3324 45.3538 28.3324 38.7545Z" fill="current"/>
 <path d="M32.7162 34.2117C32.7162 29.9815 29.3055 26.54 25.1132 26.54C20.9209 26.54 17.5102 29.9815 17.5102 34.2117V38.3133C17.5102 42.1614 16.1052 45.8559 13.5541 48.7161L10.342 52.3174C9.96243 52.743 9.99667 53.3985 10.4185 53.7816C10.8403 54.1647 11.4897 54.1298 11.8695 53.7045L15.0815 50.1032C17.9728 46.8616 19.5652 42.6745 19.5652 38.3133V34.2117C19.5652 31.1248 22.0541 28.6135 25.1133 28.6135C28.1726 28.6135 30.6614 31.1248 30.6614 34.2117V38.7545C30.6614 45.9395 28.0236 52.8247 23.2334 58.1414L19.5175 62.266C19.1357 62.6895 19.1667 63.3454 19.5866 63.7305C19.7834 63.9112 20.0307 64.0001 20.2773 64.0001C20.5567 64.0001 20.8351 63.8858 21.0379 63.6607L24.7539 59.5361C29.8884 53.8369 32.7162 46.4566 32.7162 38.7545V34.2117Z" fill="current"/>
